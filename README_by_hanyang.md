@@ -41,7 +41,7 @@ main hyperparameters needed to change is
 
 1. cd alpaca_eval
 2. `pip install -e .`
-3. `pip install vllm==0.5.3.`
+3. `pip install vllm==0.5.3`
 4. if met error like ```libstdc++.so.6: version `GLIBCXX_3.4.29' not found```, this can be solved `pip install --upgrade --force-reinstall zmq` as in [here](https://github.com/pybind/pybind11/discussions/3453).
 5. modify the RainbowPO model configs under model_config, which gives the `model_name` for later evaluation by Llama3-70B-Instruct.
 6. `CUDA_VISIBLE_DEVICES=0 alpaca_eval generate_from_model --model_configs "Llama-3-Instruct-8B-RainbowPO"`
