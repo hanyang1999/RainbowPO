@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+Llama-3-Instruct-8B-SimPO-beta=10-LN-hadv=0-max=2048-wr=0.1,55.41044776119403,1.7529969365022127,community,1829,445,358,1,804,55.41044776119403,60.93746310351833,0.061145643952090406

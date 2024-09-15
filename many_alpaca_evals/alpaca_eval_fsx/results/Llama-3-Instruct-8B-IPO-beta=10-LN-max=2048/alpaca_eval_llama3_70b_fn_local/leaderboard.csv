@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+Llama-3-Instruct-8B-IPO-beta=10-LN-max=2048,49.440993788819874,1.7632538302017726,community,1900,398,407,0,805,49.440993788819874,52.59766546207136,0.06222823044456005
