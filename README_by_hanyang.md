@@ -31,7 +31,7 @@ main hyperparameters needed to change is
 ## 2. Run the scripts under `examples\`
 
 1. Launch a pod.
-2. cd to `\trl\`
+2. cd to `\RainbowPO\`
 3. `pip install -e .`
 4. `pip install deepspeed==0.14.5` (notice that the most recent deepspeed is 0.15.0, which conflicts with trl)
 5. `pip install wandb==0.17.5`, `wandb disabled`
