@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+Llama-3-Instruct-8B-Mixing-Margin-Sigmoid-0.25_maxlen2048,57.95031055900621,1.7398200613031762,community,1937,466,338,1,805,57.95031055900621,60.67319535685981,0.15703515182979028
