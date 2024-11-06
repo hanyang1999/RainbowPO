@@ -1,2 +1,2 @@
 # RainbowPO
-Implementation of RainbowPO based on TRL
+Codebase of RainbowPO based on TRL (Transformer Reinforcement Learning)
