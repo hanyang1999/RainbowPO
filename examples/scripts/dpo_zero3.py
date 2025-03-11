@@ -62,7 +62,6 @@ if __name__ == "__main__":
 
     training_args.lr_scheduler_type = "cosine"
     
-
     # Force use our print callback
     if TRL_USE_RICH:
         training_args.disable_tqdm = True
@@ -150,7 +149,10 @@ if __name__ == "__main__":
         load_from_cache_file=True,
     )
     train_dataset = ds[args.dataset_train_split]
-    eval_dataset = ds[args.dataset_test_split]
+    if 'test' in ds:
+        eval_dataset = ds[args.dataset_test_split]
+    else:
+        eval_dataset = None
 
     ################
     # Training

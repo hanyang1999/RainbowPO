@@ -1,2 +1,0 @@
-,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
-Llama-3-Instruct-8B-DPO-beta=10-LN-hadv=0.05,60.06211180124224,1.7261697728275078,community,1975,483,321,1,805,60.06211180124224,58.89995605251494,0.05759495470477096

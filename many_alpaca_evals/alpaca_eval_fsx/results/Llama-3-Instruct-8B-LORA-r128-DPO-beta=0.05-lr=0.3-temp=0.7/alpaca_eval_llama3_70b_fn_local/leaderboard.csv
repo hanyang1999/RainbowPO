@@ -1,2 +1,0 @@
-,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
-Llama-3-Instruct-8B-LORA-r128-DPO-beta=0.05-lr=0.3-temp=0.7,47.82338308457712,1.7616903203008083,community,1920,384,419,1,804,47.82338308457712,49.95215935919908,0.057474619744761514

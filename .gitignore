@@ -1,0 +1,7 @@
+# models_rlhf
+# many_alpaca_evals
+alpaca_eval/results
+alpaca_eval/results_september
+old_commands
+wandb
+examples/raw_datasets

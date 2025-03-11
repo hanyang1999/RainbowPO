@@ -93,13 +93,13 @@ class DPOConfig(TrainingArguments):
     """
 
     beta: float = 10
-    home_advantage: float = 0.0
+    home_advantage: float = 0.1
 
-    if_mixing_alpha: bool = False
-    mixing_alpha: float = 0.5
+    if_mixing_alpha: bool = True
+    mixing_alpha: float = 0.25
 
     length_normalization: bool = True
-    reference_free: bool = True
+    reference_free: bool = False
 
     neg_log_dispersion_mean: float = 0.29
 
@@ -107,7 +107,7 @@ class DPOConfig(TrainingArguments):
     sft_coef: float = 0.5
 
     loss_type: Literal[
-        "sigmoid", "hinge", "ipo", "bco_pair", "sppo_hard", "nca_pair", "robust", "aot", "aot_pair", "exo_pair", "mallows_dpo", "mallows_ipo","cauchy"
+        "sigmoid", "hinge", "ipo", "bco_pair", "sppo_hard", "nca_pair", "robust", "aot", "aot_pair", "exo_pair", "mallows_dpo", "mallows_ipo","mallows_ipo_modified","cauchy"
     ] = "mallows_dpo"
 
     output_reference_entropy: bool = False

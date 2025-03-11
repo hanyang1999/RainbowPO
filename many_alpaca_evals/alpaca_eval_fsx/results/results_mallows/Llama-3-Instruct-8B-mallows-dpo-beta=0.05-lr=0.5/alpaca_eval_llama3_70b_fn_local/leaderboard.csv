@@ -1,2 +1,0 @@
-,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
-Llama-3-Instruct-8B-mallows-dpo-beta=0.05-lr=0.5,59.87577639751552,1.7263893606036667,community,1988,481,322,2,805,59.87577639751552,56.90599155425107,3.915454715223134e-16

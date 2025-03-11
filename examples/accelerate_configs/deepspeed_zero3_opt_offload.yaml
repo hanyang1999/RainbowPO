@@ -2,7 +2,7 @@ compute_environment: LOCAL_MACHINE
 debug: false
 deepspeed_config:
   deepspeed_multinode_launcher: standard
-  offload_optimizer_device: None
+  offload_optimizer_device: cpu
   offload_param_device: None
   zero3_init_flag: true
   zero3_save_16bit_model: true

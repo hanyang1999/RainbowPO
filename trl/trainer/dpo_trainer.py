@@ -524,7 +524,7 @@ class DPOTrainer(Trainer):
         if args.loss_type == "kto_pair":
             raise ValueError("Support for kto_pair has been removed in DPOTrainer. Please use KTOTrainer.")
 
-        if args.loss_type in ["mallows_dpo", "mallows_ipo"]:
+        if args.loss_type in ["mallows_dpo", "mallows_ipo","mallows_ipo_modified"]:
             self.use_mallows = True
         else:
             self.use_mallows = False
@@ -1277,11 +1277,17 @@ class DPOTrainer(Trainer):
             # self.dispersion_mean = torch.tensor(self.dispersion_mean, dtype=torch.float32, requires_grad=False)
             neg_log_dispersion = - self.dispersion_mean * torch.log(reference_entropy)
 
-            losses = (neg_log_dispersion * logits - 1 / (2 * self.beta)) ** 2
+            losses = (self.beta * neg_log_dispersion * logits - 1 / 2 ) ** 2
+        
+        elif self.loss_type == "mallows_ipo_modified":
+            # self.dispersion_mean = torch.tensor(self.dispersion_mean, dtype=torch.float32, requires_grad=False)
+            neg_log_dispersion = - self.dispersion_mean * torch.log(reference_entropy)
+
+            losses = torch.relu(1/2 - self.beta * neg_log_dispersion * logits) ** 2
 
         else:
             raise ValueError(
-                f"Unknown loss type: {self.loss_type}. Should be one of ['sigmoid', 'hinge', 'ipo', 'bco_pair', 'sppo_hard', 'nca_pair', 'robust', 'exo_pair', 'mallows_dpo', 'mallows_ipo','cauchy']"
+                f"Unknown loss type: {self.loss_type}. Should be one of ['sigmoid', 'hinge', 'ipo', 'bco_pair', 'sppo_hard', 'nca_pair', 'robust', 'exo_pair', 'mallows_dpo', 'mallows_ipo', 'mallows_ipo_modified','cauchy']"
             )
 
         if self.add_sft_loss:
