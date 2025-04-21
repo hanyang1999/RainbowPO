@@ -58,9 +58,7 @@ If our paper and code repos are helpful, you are more than welcome to cite our p
   journal={The Thirteenth International Conference on Learning Representations},
   year={2024}
 }
-```
 
-```
 @article{zhao2024rainbowpo,
   title={Rainbowpo: A unified framework for combining improvements in preference optimization},
   author={Zhao, Hanyang and Winata, Genta Indra and Das, Anirban and Zhang, Shi-Xiong and Yao, David D and Tang, Wenpin and Sahu, Sambit},
