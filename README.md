@@ -46,3 +46,25 @@ main hyperparameters needed to change is
 5. modify the RainbowPO model configs under model_config, which gives the `model_name` for later evaluation by Llama3-70B-Instruct.
 6. `CUDA_VISIBLE_DEVICES=0 alpaca_eval generate_from_model --model_configs "Llama-3-Instruct-8B-RainbowPO"`
 7. do 1-3 again in another terminal the latest opened cpu pod/notebook and run `alpaca_eval evaluate --reference_outputs='<some fsx path>/evaluations/alpaca_eval/results/gpt4_1106_preview/model_outputs.json' --model_outputs='<some fsx path>>/evaluations/alpaca_eval/results/{model_name}/model_outputs.json'  --annotators_config='alpaca_eval_llama3_70b_fn_local'` in which the reference outputs is taken as gpt4_1106_preview generated answers for default and model outputs is from the model name to be saved. The win rate will then be calculated.
+
+# Citation
+
+If our paper and code repos are helpful, you are more than welcome to cite our papers through the following bib tex:
+
+```
+@article{chen2024mallowspo,
+  title={MallowsPO: Fine-Tune Your LLM with Preference Dispersions},
+  author={Chen, Haoxian and Zhao, Hanyang and Lam, Henry and Yao, David and Tang, Wenpin},
+  journal={arXiv preprint arXiv:2405.14953},
+  year={2024}
+}
+```
+
+```
+@article{zhao2024rainbowpo,
+  title={Rainbowpo: A unified framework for combining improvements in preference optimization},
+  author={Zhao, Hanyang and Winata, Genta Indra and Das, Anirban and Zhang, Shi-Xiong and Yao, David D and Tang, Wenpin and Sahu, Sambit},
+  journal={arXiv preprint arXiv:2410.04203},
+  year={2024}
+}
+```
