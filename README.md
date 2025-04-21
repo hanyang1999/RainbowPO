@@ -55,7 +55,7 @@ If our paper and code repos are helpful, you are more than welcome to cite our p
 @article{chen2024mallowspo,
   title={MallowsPO: Fine-Tune Your LLM with Preference Dispersions},
   author={Chen, Haoxian and Zhao, Hanyang and Lam, Henry and Yao, David and Tang, Wenpin},
-  journal={arXiv preprint arXiv:2405.14953},
+  journal={The Thirteenth International Conference on Learning Representations},
   year={2024}
 }
 ```
@@ -64,7 +64,7 @@ If our paper and code repos are helpful, you are more than welcome to cite our p
 @article{zhao2024rainbowpo,
   title={Rainbowpo: A unified framework for combining improvements in preference optimization},
   author={Zhao, Hanyang and Winata, Genta Indra and Das, Anirban and Zhang, Shi-Xiong and Yao, David D and Tang, Wenpin and Sahu, Sambit},
-  journal={arXiv preprint arXiv:2410.04203},
+  journal={The Thirteenth International Conference on Learning Representations},
   year={2024}
 }
 ```
